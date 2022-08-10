@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    scroll-behavior: smooth;
+    scroll-margin: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: rgb(0,0,0);
+    box-shadow: 0 0 10px rgb(0,0,0);
+    position: fixed;
+}
+
+.navbarLogoContainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbarLogo{
+    padding: 13px;
+}
+
+.bars{
+    color: rgb(255, 252, 80);
+    font-size: 25px;
+    align-self: center;
+    margin: 0 20px;
+    display: none;
+}
+
+.navbarLinks{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.navbarLink{
+    margin: 0 30px;
+    font-size: 20px;
+    font-family: 'Barriecito', cursive;
+    color: rgb(255, 252, 80);
+    text-decoration: none;
+}
+
+.navbarLink:hover{
+    color: rgb(253, 2, 109);
+}
+
+/* HEADER */
+
+.header{
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(0,0,0);
+    background-image: url("./Images/fondoHeader.webp");
+    background-size: cover;
+}
+
+.headerLogo{
+    width: 55%;
+}
+
+/* ABOUT */
+
+.about{
+    height: 550px;
+    background-image: url("https://image.jimcdn.com/app/cms/image/transf/none/path/seeaa8d15c3e53a26/image/i12a27d387fd8e8f2/version/1438203087/image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 100px;
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+.aboutTitle{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Barriecito', cursive;
+    color: rgb(255, 252, 80);
+    text-shadow: 0 0 5px rgb(0,0,0);
+}
+
+.aboutText{
+    width: 50%;
+    font-size: 30px;
+    color: rgb(253, 2, 109);
+    text-shadow: 0 0 5px rgb(0,0,0);
+}
+
+/* FOOD */
+
+.food{
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+.foodTitle{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0 30px 0;
+    color: rgb(0, 255, 255);
+    font-family: 'Barriecito', cursive;
+}
+
+.foodCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 40px;
+}
+
+.foodCard{
+    border: 1px solid rgb(0, 255, 255);
+    box-shadow: 3px 3px 7px rgb(0,0,0);
+}
+
+.foodCardImage{
+    width: 100%;
+}
+
+.foodCardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0,0,0);
+}
+
+.foodCardInfoTitle{
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(255, 252, 80);
+}
+
+.foodCardInfoPrice{
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(253, 2, 109);
+}
+
+.foodCardInfoButton{
+    padding: 2px 5px;
+    margin: 5px 0;
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(0,0,0);
+    color: rgb(0, 255, 255);
+}
+
+.foodCardInfoButton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0,0,0);
+}
+
+.foodCardInfoText{
+    padding-top: 5px;
+    color: rgb(255, 252, 80);
+}
+
+/* DRINKS */
+
+.drinks{
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+.drinksTitle{
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0 30px 0;
+    color: rgb(0, 255, 255);
+    font-family: 'Barriecito', cursive;
+}
+
+.drinksCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 40px;
+}
+
+.drinksCard{
+    border: 1px solid rgb(0, 255, 255);
+    box-shadow: 3px 3px 7px rgb(0,0,0);
+}
+
+.drinksCardImage{
+    width: 100%;
+}
+
+.drinksCardInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0,0,0);
+}
+
+.drinksCardInfoTitle{
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(255, 252, 80);
+}
+
+.drinksCardInfoPrice{
+    padding: 5px 0;
+    font-size: 20px;
+    color: rgb(253, 2, 109);
+}
+
+.drinksCardInfoButton{
+    padding: 2px 5px;
+    margin: 5px 0;
+    border: 1px solid rgb(0, 255, 255);
+    background-color: rgb(0,0,0);
+    color: rgb(0, 255, 255);
+}
+
+.drinksCardInfoButton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0,0,0);
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    background-color: rgb(253, 2, 109);
+    box-shadow: 0 0 10px rgb(0,0,0);
+}
+
+.contactCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+.contactCardIcon{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contactCardText{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 970px){
+    .navbarLogoContainer{
+        width: 100%;
+    }
+    .bars{
+        display: flex;
+    }
+    .navbarLinks{
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        height: calc(100vh - 80px);
+        background-color: rgb(255, 252, 80);
+        transition: 0.3s;
+    }
+    .navbarLink{
+        margin: 15px 0;
+        color: rgb(0,0,0);
+    }
+    .navbarToggle{
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 80px;  
+        left: 0;
+        height: calc(100vh - 80px);
+        background-color: rgb(255, 252, 80);
+        transition: 0.3s;
+    }
+    
+    .about{
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+    .aboutTitle{
+        font-size: 35px;
+    }
+    .aboutText{
+        width: 85%;
+        font-size: 25px;
+    }
+
+    .foodCards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .drinksCards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 735px){
+    .foodCards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .drinksCards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contactCard{
+        margin: 0 10px;
+    }
+    .contactCardIcon{
+        font-size: 30px;
+    }
+    .contactCardText{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 515px){
+    .foodCards{
+        grid-template-columns: 1fr;
+    }
+
+    .drinksCards{
+        grid-template-columns: 1fr;
+    }
+}
+
+.otro{
+    height: 500px;
+}
