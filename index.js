@@ -1,41 +1,30 @@
-let bars = document.querySelector(".bars");
-let navbarLinks = document.querySelector(".navbarLinks");
+let barsButton = document.querySelector(".navbar-bars");
+let navbarList = document.querySelector(".navbar-list");
+let header = document.querySelector("#header-a");
+let cocktails = document.querySelector("#cocktails-a");
+let team = document.querySelector("#team-a");
+let food = document.querySelector("#food-a");
+let promotions = document.querySelector("#promotions-a");
+let contact = document.querySelector("#contact-a");
 
-let inicio = document.querySelector("#inicio");
-let sobreNosotros = document.querySelector("#sobreNosotros");
-let comidas = document.querySelector("#comidas");
-let tragos = document.querySelector("#tragos");
-let contacto = document.querySelector("#contacto");
-
-bars.addEventListener("click", () => {
-    navbarLinks.classList.toggle("navbarToggle");
-})
-
-inicio.addEventListener("click", () => {
-    navbarLinks.classList.toggle("navbarToggle");
-})
-sobreNosotros.addEventListener("click", () => {
-    navbarLinks.classList.toggle("navbarToggle");
-})
-comidas.addEventListener("click", () => {
-    navbarLinks.classList.toggle("navbarToggle");
-})
-tragos.addEventListener("click", () => {
-    navbarLinks.classList.toggle("navbarToggle");
-})
-contacto.addEventListener("click", () => {
-    navbarLinks.classList.toggle("navbarToggle");
-})
-
-let nachosChingonesToggle = false;
-let nachosChingonesButton = document.querySelector("#nachosChingones");
-nachosChingonesButton.addEventListener("click", () => {
-    let nachosChingonesText = document.querySelector(".nachosChingones");
-    if (nachosChingonesToggle === false) {
-        nachosChingonesText.innerHTML = "Montaña de nachos preparada con tortillas caseras y servida con salsa de queso, guacamole y frijoles re fritos";
-        nachosChingonesToggle = true;
-    } else {
-        nachosChingonesText.innerHTML = "";
-        nachosChingonesToggle = false;
-    }
-})
+barsButton.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});
+header.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});
+cocktails.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});
+team.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});
+food.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});
+promotions.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});
+contact.addEventListener("click", ()=>{
+    navbarList.classList.toggle("navbar-list-visible")
+});

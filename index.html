@@ -1,164 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eS">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Importación del ícono de la página -->
-    <link rel="icon" href="https://takiero.com/wp-content/uploads/2022/04/logoTakierocantina-1-768x768.png" />
-    <!-- Importación de la fuente de Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
-    <!-- Importación de la hoja de estilo -->
-    <link href="./styles.css" rel="stylesheet">
-    <!-- Importación Font Awesome -->
+    <link href="./styles.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7398f5c00d.js" crossorigin="anonymous"></script>
-    <title>Ta'KierO - Cantina Mexicana</title>
+    <script src="./index.js" defer></script>
+    <title>Ta'Kiero</title>
 </head>
 <body>
-
-    <!-- NAVBAR -->
-
     <nav class="navbar">
-        <div class="navbarLogoContainer">
-            <img src="./Images/logoNavbar.png" class="navbarLogo">
-            <i class="fas fa-bars bars" id="navbarButton"></i>
+        <div class="navbar-logo-container">
+            <img src="./Images/logoNavbar.png" class="navbar-logo"/>
+            <i class="fas fa-bars navbar-bars"></i>
         </div>
-        <div class="navbarLinks">
-            <a href="#header" class="navbarLink" id="inicio">INICIO</a>
-            <a href="#about" class="navbarLink" id="sobreNosotros">SOBRE NOSOTROS</a>
-            <a href="#food" class="navbarLink" id="comidas">COMIDAS</a>
-            <a href="#drinks" class="navbarLink" id="tragos">TRAGOS</a>
-            <a href="#contact" class="navbarLink" id="contacto">CONTACTO</a>
-        </div>
+        <ul class="navbar-list navbar-list-invisible">
+            <li class="navbar-list-item"><a href="#header" id="header-a">Sobre Nosotros</a></li>
+            <li class="navbar-list-item"><a href="#cocktails" id="cocktails-a">Cocktails</a></li>
+            <li class="navbar-list-item"><a href="#team" id="team-a">Equipo</a></li>
+            <li class="navbar-list-item"><a href="#food" id="food-a">Platos</a></li>
+            <li class="navbar-list-item"><a href="#promotions" id="promotions-a">Promociones</a></li>
+            <li class="navbar-list-item"><a href="#contact" id="contact-a">Contacto</a></li>
+        </ul>
     </nav>
-    
-    <!-- HEADER -->
-
     <header class="header" id="header">
-        <img src="./Images/logo.png" class="headerLogo">
+        <img src="./Images/logo.png" class="header-image"/>
+        <p class="header-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione rem ipsum sapiente repellendus cumque nam, eaque molestias laborum aperiam officiis ea architecto harum recusandae iure magni porro, quam nesciunt ut?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione rem ipsum sapiente repellendus cumque nam, eaque molestias laborum aperiam officiis ea architecto harum recusandae iure magni porro, quam nesciunt ut?</p>
     </header>
-
-    <!-- ABOUT -->
-
-    <section class="about" id="about">
-        <h3 class="aboutTitle">¿Quiénes somos?</h3>
-        <p class="aboutText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, beatae aliquam quaerat aperiam consectetur vel? Debitis laborum commodi ipsam dolores tenetur vel, dicta rerum tempora corrupti suscipit veniam, architecto obcaecati!</p>
-    </section>
-
-    <!-- FOOD -->
-
-    <section class="food" id="food">
-        <h3 class="foodTitle">Comidas</h3>
-        <div class="foodCards">
-            <figure class="foodCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="foodCardImage">
-                <div class="foodCardInfo">
-                    <p class="foodCardInfoTitle">Nachos Chingones</p>
-                    <p class="foodCardInfoPrice">13,00 €</p>
-                    <button class="foodCardInfoButton" id="nachosChingones">Ver detalles</button>
-                    <p class="foodCardInfoText nachosChingones"></p>
-                </div>
-            </figure>
-            <figure class="foodCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="foodCardImage">
-                <div class="foodCardInfo">
-                    <p class="foodCardInfoTitle">Nachos Chingones</p>
-                    <p class="foodCardInfoPrice">13,00 €</p>
-                    <button class="foodCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="foodCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="foodCardImage">
-                <div class="foodCardInfo">
-                    <p class="foodCardInfoTitle">Nachos Chingones</p>
-                    <p class="foodCardInfoPrice">13,00 €</p>
-                    <button class="foodCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="foodCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="foodCardImage">
-                <div class="foodCardInfo">
-                    <p class="foodCardInfoTitle">Nachos Chingones</p>
-                    <p class="foodCardInfoPrice">13,00 €</p>
-                    <button class="foodCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="foodCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="foodCardImage">
-                <div class="foodCardInfo">
-                    <p class="foodCardInfoTitle">Nachos Chingones</p>
-                    <p class="foodCardInfoPrice">13,00 €</p>
-                    <button class="foodCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
+    <section class="cocktails" id="cocktails">
+        <div class="cocktails-item cocktails-light">
+            <h3 class="cocktails-item-title">Palomito</h3>
+            <p class="cocktails-item-price">8.00€</p>
+            <p class="cocktails-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="cocktails-item cocktails-dark">
+            <h3 class="cocktails-item-title">Catrina purpura</h3>
+            <p class="cocktails-item-price">7.50€</p>
+            <p class="cocktails-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="cocktails-item cocktails-light">
+            <h3 class="cocktails-item-title">Margarita Frozen</h3>
+            <p class="cocktails-item-price">7.50€</p>
+            <p class="cocktails-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="cocktails-item cocktails-dark">
+            <h3 class="cocktails-item-title">Titulo</h3>
+            <p class="cocktails-item-price">8.00€</p>
+            <p class="cocktails-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="cocktails-item cocktails-light">
+            <h3 class="cocktails-item-title">Titulo</h3>
+            <p class="cocktails-item-price">8.00€</p>
+            <p class="cocktails-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="cocktails-item cocktails-dark">
+            <h3 class="cocktails-item-title">Titulo</h3>
+            <p class="cocktails-item-price">8.00€</p>
+            <p class="cocktails-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
         </div>
     </section>
-
-    <!-- DRINKS -->
-
-    <section class="drinks" id="drinks">
-        <h3 class="drinksTitle">Tragos</h3>
-        <div class="drinksCards">
-            <figure class="drinksCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="drinksCardImage">
-                <div class="drinksCardInfo">
-                    <p class="drinksCardInfoTitle">Nachos Chingones</p>
-                    <p class="drinksCardInfoPrice">13,00 €</p>
-                    <button class="drinksCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="drinksCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="drinksCardImage">
-                <div class="drinksCardInfo">
-                    <p class="drinksCardInfoTitle">Nachos Chingones</p>
-                    <p class="drinksCardInfoPrice">13,00 €</p>
-                    <button class="drinksCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="drinksCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="drinksCardImage">
-                <div class="drinksCardInfo">
-                    <p class="drinksCardInfoTitle">Nachos Chingones</p>
-                    <p class="drinksCardInfoPrice">13,00 €</p>
-                    <button class="drinksCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="drinksCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="drinksCardImage">
-                <div class="drinksCardInfo">
-                    <p class="drinksCardInfoTitle">Nachos Chingones</p>
-                    <p class="drinksCardInfoPrice">13,00 €</p>
-                    <button class="drinksCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
-            <figure class="drinksCard">
-                <img src="https://images5.alphacoders.com/311/311554.jpg" class="drinksCardImage">
-                <div class="drinksCardInfo">
-                    <p class="drinksCardInfoTitle">Nachos Chingones</p>
-                    <p class="drinksCardInfoPrice">13,00 €</p>
-                    <button class="drinksCardInfoButton">Ver detalles</button>
-                </div>
-            </figure>
+    <p class="title" id="team">Te presentamos a nuestro equipo...</p>
+    <section class="team">
+        <div class="team-card">
+            <img src="https://media.istockphoto.com/id/481864562/es/foto/fotograf%C3%ADa-de-un-pasaporte-cool-guy-en-una-camisa-azul.jpg?s=612x612&w=0&k=20&c=0SlCMZCgsJ_RIgr-IePdMUSmY6Xajwn1CjbvyHckRaY=" class="team-card-image"/>
+            <p class="team-card-name">Juan</p>
+            <p class="team-card-ocupation">Camarero</p>
+        </div>
+        <div class="team-card">
+            <img src="https://media.istockphoto.com/id/481864562/es/foto/fotograf%C3%ADa-de-un-pasaporte-cool-guy-en-una-camisa-azul.jpg?s=612x612&w=0&k=20&c=0SlCMZCgsJ_RIgr-IePdMUSmY6Xajwn1CjbvyHckRaY=" class="team-card-image"/>
+            <p class="team-card-name">Asya</p>
+            <p class="team-card-ocupation">Cocinera</p>
+        </div>
+        <div class="team-card">
+            <img src="https://media.istockphoto.com/id/481864562/es/foto/fotograf%C3%ADa-de-un-pasaporte-cool-guy-en-una-camisa-azul.jpg?s=612x612&w=0&k=20&c=0SlCMZCgsJ_RIgr-IePdMUSmY6Xajwn1CjbvyHckRaY=" class="team-card-image"/>
+            <p class="team-card-name">Juan</p>
+            <p class="team-card-ocupation">Camarero</p>
+        </div>
+        <div class="team-card">
+            <img src="https://media.istockphoto.com/id/481864562/es/foto/fotograf%C3%ADa-de-un-pasaporte-cool-guy-en-una-camisa-azul.jpg?s=612x612&w=0&k=20&c=0SlCMZCgsJ_RIgr-IePdMUSmY6Xajwn1CjbvyHckRaY=" class="team-card-image"/>
+            <p class="team-card-name">Juan</p>
+            <p class="team-card-ocupation">Camarero</p>
         </div>
     </section>
-
-    <!-- CONTACT -->
-
+    <section id="food">
+        <div class="food-item food-light">
+            <h3 class="food-item-title">Palomito</h3>
+            <p class="food-item-price">8.00€</p>
+            <p class="food-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="food-item food-dark">
+            <h3 class="food-item-title">Catrina purpura</h3>
+            <p class="food-item-price">7.50€</p>
+            <p class="food-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="food-item food-light">
+            <h3 class="food-item-title">Palomito</h3>
+            <p class="food-item-price">8.00€</p>
+            <p class="food-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="food-item food-dark">
+            <h3 class="food-item-title">Catrina purpura</h3>
+            <p class="food-item-price">7.50€</p>
+            <p class="food-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="food-item food-light">
+            <h3 class="food-item-title">Palomito</h3>
+            <p class="food-item-price">8.00€</p>
+            <p class="food-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+        <div class="food-item food-dark">
+            <h3 class="food-item-title">Catrina purpura</h3>
+            <p class="food-item-price">7.50€</p>
+            <p class="food-item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam repudiandae dicta consequatur, voluptate ipsum quam quas culpa aut dolor atque nobis, magni deleniti quibusdam aperiam fugiat distinctio laborum porro. Amet.</p>
+        </div>
+    </section>
+    <p class="title" id="promotions">Nuestras promociones</p>
+    <section class="dayOff">
+        <div class="dayOff-card">
+            <p class="dayOff-card-title">MIERCOLOCO</p>
+            <P class="dayOff-card-description">Nachos + 2 Coronas x 16.00€</P>
+        </div>
+        <div class="dayOff-card">
+            <p class="dayOff-card-title">JUEVEBES</p>
+            <P class="dayOff-card-description">Todos los cocktails a 6.00€</P>
+        </div>
+        <div class="dayOff-card">
+            <p class="dayOff-card-title">BEVIERNES</p>
+            <P class="dayOff-card-description">Cerveza de barril -10% OFF</P>
+        </div>
+    </section>
     <footer class="contact" id="contact">
-        <a href="#" class="contactCard">
-            <i class="fas fa-phone contactCardIcon"></i>
-            <p class="contactCardText">623271806</p>
-        </a>
-        <a href="#" class="contactCard">
-            <i class="fas fa-location-arrow contactCardIcon"></i>
-            <p class="contactCardText">Av. Vicente Llorca, 13</p>
-        </a>
-        <a href="#" class="contactCard">
-            <i class="fas fa-at contactCardIcon"></i>
-            <p class="contactCardText">takiero@gmail.com</p>
-        </a>
+        <div class="contact-card">
+            <i class="contact-card-logo fas fa-phone"></i>
+            <p class="contact-card-data">623271806</p>
+        </div>
+        <div class="contact-card">
+            <i class="contact-card-logo fas fa-at"></i>
+            <p class="contact-card-data">takiero@gmail.com</p>
+        </div>
+        <div class="contact-card">
+            <i class="contact-card-logo fas fa-clock"></i>
+            <p class="contact-card-data">13:30-23:00</p>
+        </div>
     </footer>
-
-    <script src="./index.js"></script>
 </body>
 </html>

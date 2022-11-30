@@ -1,357 +1,355 @@
+/* GLOBAL */
+
 *{
     margin: 0;
+    font-family: 'Rajdhani', sans-serif;
     scroll-behavior: smooth;
-    scroll-margin: 80px;
-    font-family: Arial, Helvetica, sans-serif;
+    scroll-margin: 70px;
+}
+
+.title{
+    padding: 80px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255,255,255);
+    background-color: rgb(25,25,25);
+    box-shadow: 0 0 7px rgb(0,0,0);
 }
 
 /* NAVBAR */
 
 .navbar{
-    height: 80px;
-    width: 100%;
-    display: flex;
-    background-color: rgb(0,0,0);
-    box-shadow: 0 0 10px rgb(0,0,0);
-    position: fixed;
-}
-
-.navbarLogoContainer{
-    height: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-between;
-}
-
-.navbarLogo{
-    padding: 13px;
-}
-
-.bars{
-    color: rgb(255, 252, 80);
-    font-size: 25px;
-    align-self: center;
-    margin: 0 20px;
-    display: none;
-}
-
-.navbarLinks{
+    padding: 10px 10px 10px 0;
+    background-color: rgb(25,25,25);
+    box-shadow: 0 0 7px rgb(0,0,0);
+    position: fixed;
     width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    overflow-y: auto;
+    z-index: 1;
 }
 
-.navbarLink{
-    margin: 0 30px;
-    font-size: 20px;
-    font-family: 'Barriecito', cursive;
-    color: rgb(255, 252, 80);
+.navbar-logo-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo{
+    height: 100%;
+}
+
+.navbar-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-list-item{
+    font-size: 22px;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar-list-item:hover{
+    cursor: pointer;
+}
+
+.navbar-list-item::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(88, 223, 25);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.navbar-list-item:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-list-item a{
+    color: rgb(88, 223, 25);
     text-decoration: none;
 }
 
-.navbarLink:hover{
-    color: rgb(253, 2, 109);
+.navbar-bars{
+    color: rgb(88, 223, 25);
+    font-size: 30px;
+    display: none;
+}
+
+.navbar-list-invisible{
+    left: 100vw;
+}
+
+.navbar-list-visible{
+    left: 0vw;
 }
 
 /* HEADER */
 
 .header{
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    border: 1px solid rgb(0,0,0);
-    background-image: url("./Images/fondoHeader.webp");
-    background-size: cover;
-}
-
-.headerLogo{
-    width: 55%;
-}
-
-/* ABOUT */
-
-.about{
-    height: 550px;
-    background-image: url("https://image.jimcdn.com/app/cms/image/transf/none/path/seeaa8d15c3e53a26/image/i12a27d387fd8e8f2/version/1438203087/image.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding-top: 70px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 100px;
-    box-shadow: 0 0 10px rgb(0,0,0);
+    align-items: center;
+    padding-bottom: 100px;
+    background-image: url("./Images/aboutImage.jpg");
+    background-attachment: fixed;
 }
 
-.aboutTitle{
-    margin-bottom: 20px;
-    font-size: 50px;
-    font-family: 'Barriecito', cursive;
-    color: rgb(255, 252, 80);
-    text-shadow: 0 0 5px rgb(0,0,0);
+.header-image{
+    width: 60%;
 }
 
-.aboutText{
-    width: 50%;
+.header-paragraph{
+    font-size: 40px;
+    font-weight: bold;
+    width: 70%;
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 5px rgb(0,0,0);
+    text-align: center;
+}
+
+/* COCKTAILS */
+
+.cocktails, .food{
+    box-shadow: 0 0 7px rgb(0,0,0);
+}
+
+.cocktails-item, .food-item{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cocktails-item-title, .food-item-title{
+    font-size: 60px;
+    color: rgb(88, 223, 25);
+    text-shadow: 2px 2px 5px rgb(0,0,0);
+}
+
+.cocktails-item-price, .food-item-price{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cocktails-item-description, .food-item-description{
     font-size: 30px;
-    color: rgb(253, 2, 109);
-    text-shadow: 0 0 5px rgb(0,0,0);
+    width: 50%;
+}
+
+.cocktails-light{
+    background-image: url("https://cdn.pixabay.com/photo/2013/02/21/19/06/drink-84533_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cocktails-dark{
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/29/15/05/drink-1870139_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    text-align: right;
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 2px rgb(0,0,0);
+}
+
+/* TEAM */
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
+    padding: 0 80px 80px 80px;
+    background-color: rgb(25,25,25);
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card-image{
+    width: 100%;
+    border: 2px rgb(88, 223, 25) solid;
+    box-shadow: 3px 3px 7px rgb(0,0,0);
+}
+
+.team-card-name{
+    font-size: 30px;
+    margin-top: 10px;
+    color: rgb(255,255,255);
+}
+
+.team-card-ocupation{
+    font-size: 20px;
+    color: rgb(88, 223, 25);
 }
 
 /* FOOD */
 
-.food{
-    background-color: rgb(25, 25, 25);
-    box-shadow: 0 0 10px rgb(0,0,0);
+.food-light{
+    background-image: url("https://cdn.pixabay.com/photo/2017/11/03/00/58/egg-2913054_960_720.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.foodTitle{
-    text-align: center;
-    font-size: 50px;
-    padding: 50px 0 30px 0;
-    color: rgb(0, 255, 255);
-    font-family: 'Barriecito', cursive;
+.food-dark{
+    background-image: url("https://cdn.pixabay.com/photo/2017/08/01/02/10/dark-2562840_960_720.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    text-align: right;
+    color: rgb(255,255,255);
 }
 
-.foodCards{
+/* DAY OFF */
+
+.dayOff{
+    background-color: rgb(25,25,25);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    padding: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    padding: 0 80px 80px 80px;
 }
 
-.foodCard{
-    border: 1px solid rgb(0, 255, 255);
-    box-shadow: 3px 3px 7px rgb(0,0,0);
-}
-
-.foodCardImage{
-    width: 100%;
-}
-
-.foodCardInfo{
+.dayOff-card{
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-color: rgb(0,0,0);
+    filter: grayscale(1) blur(2px);
+    background-image: url("https://www.restaurantemuchavista.com/wp-content/uploads/2021/09/06g.jpg");
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 5px rgb(0,0,0);
 }
 
-.foodCardInfoTitle{
-    padding: 5px 0;
+.dayOff-card:hover{
+    filter: none;
+    transition: 0.3s;
+}
+
+.dayOff-card-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(88, 223, 25);
+    text-shadow: 2px 2px 5px rgb(0,0,0);
+}
+
+.dayOff-card-description{
     font-size: 20px;
-    color: rgb(255, 252, 80);
-}
-
-.foodCardInfoPrice{
-    padding: 5px 0;
-    font-size: 20px;
-    color: rgb(253, 2, 109);
-}
-
-.foodCardInfoButton{
-    padding: 2px 5px;
-    margin: 5px 0;
-    border: 1px solid rgb(0, 255, 255);
-    background-color: rgb(0,0,0);
-    color: rgb(0, 255, 255);
-}
-
-.foodCardInfoButton:hover{
-    cursor: pointer;
-    background-color: rgb(0, 255, 255);
-    color: rgb(0,0,0);
-}
-
-.foodCardInfoText{
-    padding-top: 5px;
-    color: rgb(255, 252, 80);
-}
-
-/* DRINKS */
-
-.drinks{
-    background-color: rgb(25, 25, 25);
-    box-shadow: 0 0 10px rgb(0,0,0);
-}
-
-.drinksTitle{
     text-align: center;
-    font-size: 50px;
-    padding: 50px 0 30px 0;
-    color: rgb(0, 255, 255);
-    font-family: 'Barriecito', cursive;
-}
-
-.drinksCards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
-    padding: 40px;
-}
-
-.drinksCard{
-    border: 1px solid rgb(0, 255, 255);
-    box-shadow: 3px 3px 7px rgb(0,0,0);
-}
-
-.drinksCardImage{
-    width: 100%;
-}
-
-.drinksCardInfo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(0,0,0);
-}
-
-.drinksCardInfoTitle{
-    padding: 5px 0;
-    font-size: 20px;
-    color: rgb(255, 252, 80);
-}
-
-.drinksCardInfoPrice{
-    padding: 5px 0;
-    font-size: 20px;
-    color: rgb(253, 2, 109);
-}
-
-.drinksCardInfoButton{
-    padding: 2px 5px;
-    margin: 5px 0;
-    border: 1px solid rgb(0, 255, 255);
-    background-color: rgb(0,0,0);
-    color: rgb(0, 255, 255);
-}
-
-.drinksCardInfoButton:hover{
-    cursor: pointer;
-    background-color: rgb(0, 255, 255);
-    color: rgb(0,0,0);
+    color: rgb(255,255,255);
+    text-shadow: 2px 2px 5px rgb(0,0,0);
 }
 
 /* CONTACT */
 
 .contact{
+    padding: 80px;
+    background-color: rgb(88, 223, 25);
     display: flex;
     justify-content: center;
-    padding: 60px 0;
-    background-color: rgb(253, 2, 109);
-    box-shadow: 0 0 10px rgb(0,0,0);
+    box-shadow: 0 0 7px rgb(0,0,0);
 }
 
-.contactCard{
+.contact-card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     margin: 0 20px;
-    text-decoration: none;
-    color: rgb(0,0,0);
 }
 
-.contactCardIcon{
+.contact-card-logo{
     font-size: 40px;
-    margin-bottom: 10px;
 }
 
-.contactCardText{
-    font-size: 20px;
+.contact-card-data{
+    font-size: 30px;
+    margin-top: 15px;
     text-align: center;
 }
 
-/* MEDIA QUERIES */
+/* MEDIA QUIERIES*/
 
-@media(max-width: 970px){
-    .navbarLogoContainer{
+@media(max-width: 1010px){
+    .navbar-list{
+        flex-direction: column;
+        background-color: rgb(25,25,25);
+        position: fixed;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow-y: auto;
+        top: 70px;
+        transition: left 0.3s;
+    }
+    .navbar-logo-container{
         width: 100%;
+        justify-content: space-between;
+        padding-right: 20px;
     }
-    .bars{
-        display: flex;
-    }
-    .navbarLinks{
-        flex-direction: column;
-        justify-content: flex-start;
-        position: fixed;
-        top: 80px;
-        left: 100%;
-        height: calc(100vh - 80px);
-        background-color: rgb(255, 252, 80);
-        transition: 0.3s;
-    }
-    .navbarLink{
-        margin: 15px 0;
-        color: rgb(0,0,0);
-    }
-    .navbarToggle{
-        flex-direction: column;
-        justify-content: flex-start;
-        position: fixed;
-        top: 80px;  
-        left: 0;
-        height: calc(100vh - 80px);
-        background-color: rgb(255, 252, 80);
-        transition: 0.3s;
+    .navbar-bars{
+        display: inline;
     }
     
-    .about{
-        padding: 0;
+    .cocktails-item, .food-item{
         align-items: center;
         text-align: center;
     }
-    .aboutTitle{
-        font-size: 35px;
+    .cocktails-item-price, .food-item-price{
+        margin: 5px 0 10px 0;
     }
-    .aboutText{
-        width: 85%;
-        font-size: 25px;
-    }
-
-    .foodCards{
-        grid-template-columns: 1fr 1fr 1fr;
+    .cocktails-item-description, .food-item-description{
+        width: 100%;
     }
 
-    .drinksCards{
-        grid-template-columns: 1fr 1fr 1fr;
+    .dayOff{
+        grid-template-columns: 1fr;
     }
 }
 
-@media(max-width: 735px){
-    .foodCards{
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .drinksCards{
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .contactCard{
-        margin: 0 10px;
-    }
-    .contactCardIcon{
+@media(max-width: 860px){
+    .title{
         font-size: 30px;
     }
-    .contactCardText{
-        font-size: 15px;
+    .header-paragraph{
+        font-size: 20px;
+    }
+    .team{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+    .contact-card{
+        margin: 0 10px;
+    }
+    .contact-card-logo{
+        font-size: 30px;
+    }
+    .contact-card-data{
+        font-size: 20px;
     }
 }
 
-@media(max-width: 515px){
-    .foodCards{
-        grid-template-columns: 1fr;
+@media(max-width: 500px){
+    .dayOff-card{
+        height: 250px;
     }
-
-    .drinksCards{
-        grid-template-columns: 1fr;
-    }
-}
-
-.otro{
-    height: 500px;
 }
